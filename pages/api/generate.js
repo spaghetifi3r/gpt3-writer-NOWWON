@@ -26,7 +26,7 @@ const generateAction = async (req, res) => {
 
 	// I build Prompt #2.
 	const secondPrompt = `
- Take the converstaion and input God's thoughts and generate written in thwe style of Paul Graham. Make it feel like a story with advice. Don't just list the points. Go deep into each one. Explain why.
+ Take the converstaion and input God's thoughts with examples of scripture in the Bible. Make it feel like a story with advice. Don't just list the points. Go deep into each one. Explain why so that anyone can understand.
 
  Me: ${req.body.userInput}
 
@@ -40,9 +40,9 @@ const generateAction = async (req, res) => {
 		model: "text-davinci-003",
 		prompt: `${secondPrompt}`,
 		// I set a higher temperature for this one. Up to you!
-		temperature: 0.85,
+		temperature: 0.9,
 		// I also increase max_tokens.
-		max_tokens: 1250,
+		max_tokens: 963,
 	});
 
 	// Get the output
