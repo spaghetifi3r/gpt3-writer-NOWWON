@@ -4,13 +4,13 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta property="og:title" content="GPT-3 Writer" key="title"/>
-        <meta property="og:description" content="build with buildspace" key="description"/>
+        <meta property="og:title" content="Ask NOWWON" key="title"/>
+        <meta property="og:description" content="Virtual Assistant for Everyone" key="description"/>
         <meta
           property="og:image"
-          content="https://cdn.buildspace.so/courses/gpt3-writer/project-og.jpg"
+          content="assets/NOWWON.png"
         />
-        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="twitter:NOWWON" content="assets/NOWWON.png"></meta>
       </Head>
       <body>
         <Main />

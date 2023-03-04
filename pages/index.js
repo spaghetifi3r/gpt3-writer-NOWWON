@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/buildspace-logo.png';
+import NOWWON from '../assets/NOWWON.png';
 
 const Home = () => {
   const [userInput, setUserInput] = useState('');
@@ -36,20 +37,20 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>Virtual Assistant for Everyone | buildspace</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Ask Jesus about Faith and Love</h1>
+            <h1>Virtual Assistant for Everyone</h1>
           </div>
           <div className="header-subtitle">
-            <h2>If you could ask Jesus anything, what would you ask?</h2>
+            <h2>Even your Grandma </h2>
           </div>
         </div>
         <div className="prompt-container">
           <textarea 
-          placeholder="What would you like to ask Jesus Christ?" 
+          placeholder="Are you having trouble with your Tech?" 
           className="prompt-box"          
           value={userInput}
           onChange={onUserChangedText}
@@ -64,7 +65,7 @@ const Home = () => {
                 {isGenerating ? (
                   <span className="loader"></span>
                 ) : (
-                  <p>Generate</p>
+                  <p>Answer</p>
                 )}
               </div>
             </a>
@@ -74,7 +75,7 @@ const Home = () => {
           <div className="output">
             <div className="output-header-container">
               <div className="output-header">
-                <h3>GOD:</h3>
+                <h3>Answer:</h3>
                 <div>
                 </div>
               </div>
@@ -87,13 +88,13 @@ const Home = () => {
         </div>
       <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer"
+          href="https://adamkim.xyz"
           target="_blank"
           rel="noreferrer"
         >
           <div className="badge">
             <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <p>build with buildspace, Adam Kim</p>
           </div>
         </a>
       </div>
